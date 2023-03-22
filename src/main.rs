@@ -51,7 +51,7 @@ async fn main() -> tide::Result<()> {
         log::info!("Starting server on Port 443 in HTTPS mode");
         app.listen(
             TlsListener::build()
-                .addrs("0.0.0.0:433")
+                .addrs("0.0.0.0:443")
                 .cert(std::env::var("CERT_PATH").unwrap())
                 .key(std::env::var("KEY_PATH").unwrap()),
         )
