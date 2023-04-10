@@ -9,6 +9,12 @@ Image=ipreporter
 
 AddCapability=CAP_NET_BIND_SERVICE
 
+Environment="CERT_PATH=path_to_cert"
+Environment="KEY_PATH=path_to_key"
+
+
+Volume=/certs:/certs
+
 
 PodmanArgs=-p 80:80/tcp -p 443:443/tcp
 
