@@ -24,6 +24,6 @@ async fn main() {
             .run(([0, 0, 0, 0], 443))
             .await;
     } else {
-        warp::serve(ip).run(([0, 0, 0, 0], 80)).await;
+        warp::serve(ip).run(([0, 0, 0, 0], 8080)).await;
     }
 }
